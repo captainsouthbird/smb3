@@ -71,7 +71,7 @@ BoundCheck:	.macro
 		.endm
 
 ; Pads bytes to align to nearest 64 byte boundary for DMC samples
-; RAS: This would be useful for your own works, but I can't use
+; SB: This would be useful for your own works, but I can't use
 ; it in the natively disassembly since the assembler pads zeroes
 ; instead of $FF values... just FYI!
 ;
@@ -332,7 +332,7 @@ MMC3_IRQENABLE	= $E001 ; Enables IRQ generation
 ; ZERO PAGE RAM COMMON
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; Common use zero page RAM.  Bytes in $75-$F3 are context-dependent
-	.data		; RAS: Using .data instead of .zp to export labels
+	.data		; SB: Using .data instead of .zp to export labels
 	.org $00
 
 ; For clarification, none of the other "Temp" vars are damaged by NMI,
@@ -903,7 +903,7 @@ PLAYERSUIT_LAST		= PLAYERSUIT_HAMMER	; Marker for "last" suit (Debug cycler need
 
 
 ; Main NES SRAM begin
-	.data	; RAS: Using .data instead of .bss to export labels
+	.data	; SB: Using .data instead of .bss to export labels
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 ; $2xx SPRITE RAM

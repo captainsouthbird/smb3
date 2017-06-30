@@ -350,7 +350,7 @@ PRG012_A535:
 	CMP #TILE_ALTFORT
 	BEQ PRG012_A54A	 ; If tile is Reddish Mini-Fortress, jump to PRG012_A54A
 
-	; RAS: Irregular that they didn't use Tile_AttrTable here...
+	; SB: Irregular that they didn't use Tile_AttrTable here...
 	CMP Tile_Attributes_TS0,X
 	BGE PRG012_A570	; If this tile is a completable tile (as determined by quadrant and range), jump to PRG012_A570
 

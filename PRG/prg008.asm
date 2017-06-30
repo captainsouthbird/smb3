@@ -4405,7 +4405,7 @@ PRG008_B47E:
 	BEQ PRG008_B4A2	 ; If Level_Tileset = 14 (Underground style), jump to PRG008_B4A2
 
 	; Non-sloped levels use this:
-	; RAS: NOTE: I don't think this really means anything; this ends up pointing to
+	; SB: NOTE: I don't think this really means anything; this ends up pointing to
 	; Level_LayPtrOrig_AddrH (original layout pointer high byte), which doesn't make
 	; sense, but Level_GndLUT_Addr/H isn't used in a non-slope level anyway, so this is
 	; probably some bit of "dead" code or something...
@@ -6400,7 +6400,7 @@ PRG008_BD98:
 	CMP MuncherJelectroSet,Y
 	BEQ PRG008_BDA4		; If Player is touching muncher/jelectro (whichever is appropriate), jump to PRG008_BDA4
  
-	; RAS: This check seems superfluous and also incorrect
+	; SB: This check seems superfluous and also incorrect
 	CMP #TILEA_MUNCHER	; Assuming muncher tile!  Should be MuncherJelectroSet,Y?
 	BNE PRG008_BDB1	 ; If Player is NOT touching a muncher, jump to PRG008_BDB1
 
@@ -6460,7 +6460,7 @@ PRG008_BDE3:
 
 	; Gonna get hurt!
 
-	; RAS: Interesting ... this never happens of course...
+	; SB: Interesting ... this never happens of course...
 	LDA Player_Kuribo
 	BNE PRG008_BDEB	 ; If Player is wearing Kuribo's shoe, jump to PRG008_BDEB
 

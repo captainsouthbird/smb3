@@ -873,7 +873,7 @@ ToadHouse_ItemOff:
 
 	.byte $0B, $0E, $11
 
-	; RAS: This is a large set and could have the same effect
+	; SB: This is a large set and could have the same effect
 	; with just four items, so I wonder if there was a thought
 	; of having additional items at some point?
 ToadHouse_RandomItem:

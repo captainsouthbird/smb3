@@ -100,7 +100,7 @@ Slope_ObjectVel_Effect:
 	.byte $00, -$02,  $02,  $00,  $00,  $80,  $80,  $00	; $00-$07
 	.byte $00,  $80,  $00,  $80, -$01, -$01,  $01,  $01	; $08-$0F
 	; Incomplete, missing $10-$14
-	; RAS: Slopes $10-$14 are ceiling slopes, which enemies have pretty much
+	; SB: Slopes $10-$14 are ceiling slopes, which enemies have pretty much
 	; no proper involvement with in native SMB3.  Also due to a "lazy" calculation
 	; found after the label PRG000_C5EC, these would be inaccessible anyway!
 
@@ -5611,7 +5611,7 @@ Object_DoCollision:
 	STA <Temp_Var2	
 	JMP [Temp_Var1]	 ; Jump to the acquired address!
 
-	; RAS: Dead data: Specified frame of "suit lost" object
+	; SB: Dead data: Specified frame of "suit lost" object
 	; to display when the cooresponding suit was lost (not
 	; used for any of the "regular" power ups)
 SMB3J_SuitLossFrame:	.byte $00, $00, $00, $00, $01, $02, $03
@@ -5632,7 +5632,7 @@ Player_GetHurt:
 
 	;;;;;;;;;;;;;; Begin SMB3-J Only Code ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
-	; RAS: Lost/Dead Code -- This was the Japanese version suit loss code
+	; SB: Lost/Dead Code -- This was the Japanese version suit loss code
 	; For detail why it was removed, see PRG007 LostShoe_Pattern
 ; $D9EC
 	LDA Player_Kuribo
@@ -5675,7 +5675,7 @@ PRG000_DA15:
 	BNE PRG000_DA32	 ; If Player is in Kuribo's shoe, jump to PRG000_DA32
 
 	LDA <Player_Suit
-	CMP #PLAYERSUIT_FIRE		; RAS: Change this to "PLAYERSUIT_SUPERSUITBEGIN" and you restore Japanese version's "always shrink" code!!
+	CMP #PLAYERSUIT_FIRE		; SB: Change this to "PLAYERSUIT_SUPERSUITBEGIN" and you restore Japanese version's "always shrink" code!!
 	BLS PRG000_DA4E	 ; If Player is Big or small, jump to PRG000_DA4E
 
 	; Higher level power-up suits...
@@ -5687,7 +5687,7 @@ PRG000_DA15:
 	ORA #SND_LEVELPOOF
 	STA Sound_QLevel1
 
-	LDA #$02	; Return to Big (RAS: Would be small in Japanese version!!)
+	LDA #$02	; Return to Big (SB: Would be small in Japanese version!!)
 	JMP PRG000_DA44	 ; Jump to PRG000_DA44
 
 PRG000_DA32:
@@ -5697,7 +5697,7 @@ PRG000_DA32:
 	ORA #SND_LEVELSHOE
 	STA Sound_QLevel1
 
-	; RAS: This lost its meaning, but it marks you to lose the Kuribo's
+	; SB: This lost its meaning, but it marks you to lose the Kuribo's
 	; shoe specifically; see above for lost/dead SMB3-J code where
 	; alternate Temp_Var1 values would be used...
 	; (The other index values display as garbage now instead of the suit, 
@@ -5726,7 +5726,7 @@ PRG000_DA4E:
 	LDA #$02
 	STA Player_QueueSuit	 ; Return to Big
 
-	; RAS: NOTE: Deprecated logic!  We won't get here in SMB3-US at this
+	; SB: NOTE: Deprecated logic!  We won't get here in SMB3-US at this
 	; high of a power level anymore...
 	LDA <Player_Suit
 	CMP #PLAYERSUIT_SUPERSUITBEGIN
@@ -5794,7 +5794,7 @@ Player_Die:
 
 PRG000_DAAE:
 	; Ensure Player_FlipBits is correct?
-	; RAS: May be a cosmetic bugfix for player coming out of a somersault
+	; SB: May be a cosmetic bugfix for player coming out of a somersault
 	; (see jump to PRG000_DAAE) and getting hit, but I'm not really sure...
 	LDA <Player_FlipBits
 	AND #$7f
@@ -5803,7 +5803,7 @@ PRG000_DAAE:
 	RTS		 ; Return
 
 	; Set display effect for Player losing Kuribo's shoe
-	; RAS: This also USED to setup for losing other power-ups in
+	; SB: This also USED to setup for losing other power-ups in
 	; the Japanese version, but that is removed and broken in US.
 	; See notes at PRG007 "LostShoe_Pattern" for details...
 Player_LoseKuribo:
@@ -5847,7 +5847,7 @@ PRG000_DAC0:
 PRG000_DAE3:
 	STA SpecialObj_XVel,Y	 ; Set appropriate X velocity
 
-	; RAS: This is always zero in SMB3-US, but would have 
+	; SB: This is always zero in SMB3-US, but would have 
 	; been set to other values in the Japanese original
 	LDA <Temp_Var1
 	STA SpecialObj_Data,Y	

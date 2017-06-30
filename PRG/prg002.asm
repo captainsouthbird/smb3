@@ -751,7 +751,7 @@ PRG002_A3DA:
 	DEY		 ; Y--
 	BPL PRG002_A3DA	 ; While Y >= 0, loop!
 
-	; RAS: There's an interesting bug here; if no free slot is found,
+	; SB: There's an interesting bug here; if no free slot is found,
 	; we jump to PRG002_A417, which decrements 'Y' then 'X'. It is possible
 	; that there are no free "special object" slots, but we haven't decremented
 	; 'X' all the way, which means that we continue to loop! So you could have

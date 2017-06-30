@@ -425,7 +425,7 @@ ObjP02:	.byte $8F, $8F, $99, $9B, $9D, $9F
 ObjP04:	.byte $B1, $B3, $B5, $B7, $B9, $BB, $BD, $BF
 ObjP05:	.byte $A5, $A7, $A1, $A3, $A1, $A3
 ObjP06:	
-ObjP1B:	.byte $79, $7B, $79, $7B, $77, $77, $75, $75	; RAS: Not actually used, see BounceBlock_Tile
+ObjP1B:	.byte $79, $7B, $79, $7B, $77, $77, $75, $75	; SB: Not actually used, see BounceBlock_Tile
 ObjP09:	.byte $E1, $E5, $E1
 ObjP0A:	.byte $81, $83, $85, $87
 ObjP0C:	.byte $55, $55, $93, $93, $91, $91, $95, $95
@@ -1689,7 +1689,7 @@ ObjInit_PUpMush:
 	LDA #$10	
 	STA Objects_Timer2,X	 ; Object's timer 2 = 16
 
-	; RAS: This is probably used by the Big ? block which CAN spawn mushroom/flower/star for some reason
+	; SB: This is probably used by the Big ? block which CAN spawn mushroom/flower/star for some reason
 	LDA PUp_StarManFlash
 	BEQ PRG001_A852	 ; If flashing is NOT active, jump to PRG001_A852
 
@@ -2027,7 +2027,7 @@ ObjInit_FireFlower:
 	LDA #$10
 	STA Objects_Timer2,X	 ; Fire flower's timer 2 = $10
 
-	; RAS: This is probably used by the Big ? block which CAN spawn mushroom/flower/star for some reason
+	; SB: This is probably used by the Big ? block which CAN spawn mushroom/flower/star for some reason
 	LDA PUp_StarManFlash
 	BEQ PRG001_A9C8	 ; If flashing is NOT active, jump to PRG001_A852
 
