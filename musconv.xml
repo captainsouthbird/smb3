@@ -1,0 +1,243 @@
+<!-- MusConv utility patch and percussive note mapping -->
+<musconv>
+
+	<!-- Patches section: For remapping MIDI instrument patches to SMB3 patches on Square Tracks 1 and 2 (Only) -->
+	<patches>
+		<!-- For each <patch>:  "id" = MIDI patch number, "map" = SMB3 patch number -->
+		<patch id="0" map="1" />	<!-- Acoustic Grand Piano -->
+		<patch id="1" map="1" />	<!-- Bright Acoustic Piano -->
+		<patch id="2" map="1" />	<!-- Electric Grand Piano -->
+		<patch id="3" map="1" />	<!-- Honky-tonk Piano -->
+		<patch id="4" map="1" />	<!-- Rhodes Piano -->
+		<patch id="5" map="1" />	<!-- Chorus Piano -->
+		<patch id="6" map="1" />	<!-- Harpsichord -->
+		<patch id="7" map="3" />	<!-- Clavinet -->
+		<patch id="8" map="3" />	<!-- Celesta -->
+		<patch id="9" map="3" />	<!-- Glockenspiel -->
+		<patch id="10" map="3" />	<!-- Music Box -->
+		<patch id="11" map="3" />	<!-- Vibraphone -->
+		<patch id="12" map="3" />	<!-- Marimba -->
+		<patch id="13" map="3" />	<!-- Xylophone -->
+		<patch id="14" map="3" />	<!-- Tubular Bells -->
+		<patch id="15" map="1" />	<!-- Dulcimer -->
+		<patch id="16" map="2" />	<!-- Hammond Organ -->
+		<patch id="17" map="2" />	<!-- Percuss. Organ -->
+		<patch id="18" map="2" />	<!-- Rock Organ -->
+		<patch id="19" map="2" />	<!-- Church Organ -->
+		<patch id="20" map="2" />	<!-- Reed Organ -->
+		<patch id="21" map="2" />	<!-- Accordion -->
+		<patch id="22" map="2" />	<!-- Harmonica -->
+		<patch id="23" map="2" />	<!-- Tango Accordion -->
+		<patch id="24" map="7" />	<!-- Acoustic Guitar (nylon) -->
+		<patch id="25" map="7" />	<!-- Acoustic Guitar (steel) -->
+		<patch id="26" map="7" />	<!-- Electric Guitar (jazz) -->
+		<patch id="27" map="7" />	<!-- Electric Guitar (clean) -->
+		<patch id="28" map="7" />	<!-- Electric Guitar (muted) -->
+		<patch id="29" map="0" />	<!-- Overdriven Guitar -->
+		<patch id="30" map="0" />	<!-- Distortion Guitar -->
+		<patch id="31" map="0" />	<!-- Guitar Harmonics -->
+		<patch id="32" map="0" />	<!-- Acoustic Bass -->
+		<patch id="33" map="1" />	<!-- Electric Bass (finger) -->
+		<patch id="34" map="1" />	<!-- Electric Bass (pick) -->
+		<patch id="35" map="7" />	<!-- Fretless Bass -->
+		<patch id="36" map="7" />	<!-- Slap Bass 1 -->
+		<patch id="37" map="7" />	<!-- Slap Bass 2 -->
+		<patch id="38" map="7" />	<!-- Synth Bass 1 -->
+		<patch id="39" map="7" />	<!-- Synth Bass 2 -->
+		<patch id="40" map="4" />	<!-- Violin -->
+		<patch id="41" map="4" />	<!-- Viola -->
+		<patch id="42" map="4" />	<!-- Cello -->
+		<patch id="43" map="4" />	<!-- Contra Bass -->
+		<patch id="44" map="4" />	<!-- Tremolo Strings -->
+		<patch id="45" map="7" />	<!-- Pizzicato Strings -->
+		<patch id="46" map="3" />	<!-- Orchestral Harp -->
+		<patch id="47" map="0" />	<!-- Timpani -->
+		<patch id="48" map="4" />	<!-- String Ensemble 1 -->
+		<patch id="49" map="4" />	<!-- String Ensemble 2 -->
+		<patch id="50" map="4" />	<!-- Synth Strings 1 -->
+		<patch id="51" map="4" />	<!-- Synth Strings 2 -->
+		<patch id="52" map="2" />	<!-- Choir Aahs -->
+		<patch id="53" map="2" />	<!-- Voice Oohs -->
+		<patch id="54" map="2" />	<!-- Synth Voice -->
+		<patch id="55" map="0" />	<!-- Orchestra Hit -->
+		<patch id="56" map="2" />	<!-- Trumpet -->
+		<patch id="57" map="2" />	<!-- Trombone -->
+		<patch id="58" map="2" />	<!-- Tuba -->
+		<patch id="59" map="2" />	<!-- Muted Trumpet -->
+		<patch id="60" map="2" />	<!-- French Horn -->
+		<patch id="61" map="2" />	<!-- Brass Section -->
+		<patch id="62" map="2" />	<!-- Synth Brass 1 -->
+		<patch id="63" map="2" />	<!-- Synth Brass 2 -->
+		<patch id="64" map="2" />	<!-- Soprano Sax -->
+		<patch id="65" map="2" />	<!-- Alto Sax -->
+		<patch id="66" map="2" />	<!-- Tenor Sax -->
+		<patch id="67" map="2" />	<!-- Baritone Sax -->
+		<patch id="68" map="2" />	<!-- Oboe -->
+		<patch id="69" map="2" />	<!-- English Horn -->
+		<patch id="70" map="0" />	<!-- Bassoon -->
+		<patch id="71" map="0" />	<!-- Clarinet -->
+		<patch id="72" map="0" />	<!-- Piccolo -->
+		<patch id="73" map="0" />	<!-- Flute -->
+		<patch id="74" map="0" />	<!-- Recorder -->
+		<patch id="75" map="0" />	<!-- Pan Flute -->
+		<patch id="76" map="0" />	<!-- Bottle Blow -->
+		<patch id="77" map="0" />	<!-- Shakuhachi -->
+		<patch id="78" map="0" />	<!-- Whistle -->
+		<patch id="79" map="0" />	<!-- Ocarina -->
+		<patch id="80" map="0" />	<!-- Lead 1 (square) -->
+		<patch id="81" map="0" />	<!-- Lead 2 (saw tooth) -->
+		<patch id="82" map="2" />	<!-- Lead 3 (calliope lead) -->
+		<patch id="83" map="7" />	<!-- Lead 4 (chiff lead) -->
+		<patch id="84" map="0" />	<!-- Lead 5 (charang) -->
+		<patch id="85" map="4" />	<!-- Lead 6 (voice) -->
+		<patch id="86" map="0" />	<!-- Lead 7 (fifths) -->
+		<patch id="87" map="2" />	<!-- Lead 8 (bass + lead) -->
+		<patch id="88" map="5" />	<!-- Pad 1 (new age) -->
+		<patch id="89" map="5" />	<!-- Pad 2 (warm) -->
+		<patch id="90" map="5" />	<!-- Pad 3 (poly synth) -->
+		<patch id="91" map="5" />	<!-- Pad 4 (choir) -->
+		<patch id="92" map="5" />	<!-- Pad 5 (bowed) -->
+		<patch id="93" map="5" />	<!-- Pad 6 (metallic) -->
+		<patch id="94" map="5" />	<!-- Pad 7 (halo) -->
+		<patch id="95" map="5" />	<!-- Pad 8 (sweep) -->
+		<patch id="96" map="3" />	<!-- FX 1 (rain) -->
+		<patch id="97" map="3" />	<!-- FX 2 (sound track) -->
+		<patch id="98" map="3" />	<!-- FX 3 (crystal) -->
+		<patch id="99" map="3" />	<!-- FX 4 (atmosphere) -->
+		<patch id="100" map="3" />	<!-- FX 5 (bright) -->
+		<patch id="101" map="3" />	<!-- FX 6 (goblins) -->
+		<patch id="102" map="3" />	<!-- FX 7 (echoes) -->
+		<patch id="103" map="3" />	<!-- FX 8 (sci-fi) -->
+		<patch id="104" map="5" />	<!-- Sitar -->
+		<patch id="105" map="1" />	<!-- Banjo -->
+		<patch id="106" map="5" />	<!-- Shamisen -->
+		<patch id="107" map="1" />	<!-- Koto -->
+		<patch id="108" map="1" />	<!-- Kalimba -->
+		<patch id="109" map="4" />	<!-- Bagpipe -->
+		<patch id="110" map="4" />	<!-- Fiddle -->
+		<patch id="111" map="4" />	<!-- Shanai -->
+		<patch id="112" map="3" />	<!-- Tinkle Bell -->
+		<patch id="113" map="1" />	<!-- Agogo -->
+		<patch id="114" map="7" />	<!-- Steel Drums -->
+		<patch id="115" map="1" />	<!-- Wood block -->
+		<patch id="116" map="1" />	<!-- Taiko Drum -->
+		<patch id="117" map="1" />	<!-- Melodic Tom -->
+		<patch id="118" map="1" />	<!-- Synth Drum -->
+		<patch id="119" map="0" />	<!-- Reverse Cymbal -->
+		<patch id="120" map="0" />	<!-- Guitar Fret Noise -->
+		<patch id="121" map="0" />	<!-- Breath Noise -->
+		<patch id="122" map="0" />	<!-- Seashore -->
+		<patch id="123" map="0" />	<!-- Bird Tweet -->
+		<patch id="124" map="0" />	<!-- Telephone Ringing -->
+		<patch id="125" map="0" />	<!-- Helicopter -->
+		<patch id="126" map="0" />	<!-- Applause -->
+		<patch id="127" map="0" />	<!-- Gunshot  -->
+	</patches>
+
+	<!-- Noise channel remaps (based on "notes" of Channel 10 noise MIDI) -->
+	<!-- Noise uses notes starting at 2, incrementing by 2 (2, 4, 6, 8...) -->
+	<!-- A map="0" will actually drop the sound (implied for unspecified "notes") -->
+	<noises>
+		<noise id="35" map="2" />	<!-- Bass Drum 2 -->
+		<noise id="36" map="4" />	<!-- Bass Drum 1 -->
+		<noise id="37" map="2" />	<!-- Side Stick/Rimshot -->
+		<noise id="38" map="0" />	<!-- Snare Drum 1 -->
+		<noise id="39" map="0" />	<!-- Hand Clap -->
+		<noise id="40" map="0" />	<!-- Snare Drum 2 -->
+		<noise id="41" map="0" />	<!-- Low Tom 2 -->
+		<noise id="42" map="8" />	<!-- Closed Hi-hat -->
+		<noise id="43" map="0" />	<!-- Low Tom 1 -->
+		<noise id="44" map="8" />	<!-- Pedal Hi-hat -->
+		<noise id="45" map="0" />	<!-- Mid Tom 2 -->
+		<noise id="46" map="12" />	<!-- Open Hi-hat -->
+		<noise id="47" map="0" />	<!-- Mid Tom 1 -->
+		<noise id="48" map="0" />	<!-- High Tom 2 -->
+		<noise id="49" map="12" />	<!-- Crash Cymbal 1 -->
+		<noise id="50" map="0" />	<!-- High Tom 1 -->
+		<noise id="51" map="10" />	<!-- Ride Cymbal 1 -->
+		<noise id="52" map="12" />	<!-- Chinese Cymbal -->
+		<noise id="53" map="10" />	<!-- Ride Bell -->
+		<noise id="54" map="6" />	<!-- Tambourine -->
+		<noise id="55" map="12" />	<!-- Splash Cymbal -->
+		<noise id="56" map="4" />	<!-- Cowbell -->
+		<noise id="57" map="12" />	<!-- Crash Cymbal 2 -->
+		<noise id="58" map="0" />	<!-- Vibra Slap -->
+		<noise id="59" map="12" />	<!-- Ride Cymbal 2 -->
+		<noise id="60" map="2" />	<!-- High Bongo (C5) -->
+		<noise id="61" map="4" />	<!-- Low Bongo -->
+		<noise id="62" map="2" />	<!-- Mute High Conga -->
+		<noise id="63" map="2" />	<!-- Open High Conga -->
+		<noise id="64" map="4" />	<!-- Low Conga -->
+		<noise id="65" map="0" />	<!-- High Timbale -->
+		<noise id="66" map="0" />	<!-- Low Timbale -->
+		<noise id="67" map="0" />	<!-- High Agogo -->
+		<noise id="68" map="0" />	<!-- Low Agogo -->
+		<noise id="69" map="6" />	<!-- Cabasa -->
+		<noise id="70" map="0" />	<!-- Maracas -->
+		<noise id="71" map="0" />	<!-- Short Whistle -->
+		<noise id="72" map="0" />	<!-- Long Whistle -->
+		<noise id="73" map="0" />	<!-- Short Guiro -->
+		<noise id="74" map="0" />	<!-- Long Guiro -->
+		<noise id="75" map="0" />	<!-- Claves -->
+		<noise id="76" map="0" />	<!-- High Wood Block -->
+		<noise id="77" map="0" />	<!-- Low Wood Block -->
+		<noise id="78" map="0" />	<!-- Mute Cuica -->
+		<noise id="79" map="0" />	<!-- Open Cuica -->
+		<noise id="80" map="0" />	<!-- Mute Triangle -->
+		<noise id="81" map="0" />	<!-- Open Triangle -->
+	</noises>
+
+
+	<!-- DCM channel remaps (based on "notes" of Channel 10 percussion MIDI) -->
+	<!-- Note that mapping is 1-based since $01 is the first valid "note" -->
+	<!-- A map="0" will actually drop the sound (implied for unspecified "notes") -->
+	<percussions>
+		<percussion id="35" map="1" />	<!-- Bass Drum 2 -->
+		<percussion id="36" map="2" />	<!-- Bass Drum 1 -->
+		<percussion id="37" map="3" />	<!-- Side Stick/Rimshot -->
+		<percussion id="38" map="2" />	<!-- Snare Drum 1 -->
+		<percussion id="39" map="13" />	<!-- Hand Clap -->
+		<percussion id="40" map="2" />	<!-- Snare Drum 2 -->
+		<percussion id="41" map="16" />	<!-- Low Tom 2 -->
+		<percussion id="42" map="0" />	<!-- Closed Hi-hat -->
+		<percussion id="43" map="16" />	<!-- Low Tom 1 -->
+		<percussion id="44" map="0" />	<!-- Pedal Hi-hat -->
+		<percussion id="45" map="15" />	<!-- Mid Tom 2 -->
+		<percussion id="46" map="11" />	<!-- Open Hi-hat -->
+		<percussion id="47" map="15" />	<!-- Mid Tom 1 -->
+		<percussion id="48" map="14" />	<!-- High Tom 2 -->
+		<percussion id="49" map="10" />	<!-- Crash Cymbal 1 -->
+		<percussion id="50" map="14" />	<!-- High Tom 1 -->
+		<percussion id="51" map="0" />	<!-- Ride Cymbal 1 -->
+		<percussion id="52" map="0" />	<!-- Chinese Cymbal -->
+		<percussion id="53" map="0" />	<!-- Ride Bell -->
+		<percussion id="54" map="0" />	<!-- Tambourine -->
+		<percussion id="55" map="0" />	<!-- Splash Cymbal -->
+		<percussion id="56" map="0" />	<!-- Cowbell -->
+		<percussion id="57" map="0" />	<!-- Crash Cymbal 2 -->
+		<percussion id="58" map="0" />	<!-- Vibra Slap -->
+		<percussion id="59" map="0" />	<!-- Ride Cymbal 2 -->
+		<percussion id="60" map="5" />	<!-- High Bongo (C5) -->
+		<percussion id="61" map="6" />	<!-- Low Bongo -->
+		<percussion id="62" map="6" />	<!-- Mute High Conga -->
+		<percussion id="63" map="6" />	<!-- Open High Conga -->
+		<percussion id="64" map="7" />	<!-- Low Conga -->
+		<percussion id="65" map="8" />	<!-- High Timbale -->
+		<percussion id="66" map="9" />	<!-- Low Timbale -->
+		<percussion id="67" map="0" />	<!-- High Agogo -->
+		<percussion id="68" map="0" />	<!-- Low Agogo -->
+		<percussion id="69" map="0" />	<!-- Cabasa -->
+		<percussion id="70" map="0" />	<!-- Maracas -->
+		<percussion id="71" map="0" />	<!-- Short Whistle -->
+		<percussion id="72" map="0" />	<!-- Long Whistle -->
+		<percussion id="73" map="0" />	<!-- Short Guiro -->
+		<percussion id="74" map="0" />	<!-- Long Guiro -->
+		<percussion id="75" map="0" />	<!-- Claves -->
+		<percussion id="76" map="12" />	<!-- High Wood Block -->
+		<percussion id="77" map="12" />	<!-- Low Wood Block -->
+		<percussion id="78" map="0" />	<!-- Mute Cuica -->
+		<percussion id="79" map="0" />	<!-- Open Cuica -->
+		<percussion id="80" map="0" />	<!-- Mute Triangle -->
+		<percussion id="81" map="0" />	<!-- Open Triangle -->
+	</percussions>
+</musconv>
