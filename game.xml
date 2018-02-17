@@ -1278,14 +1278,7 @@
 		</tile>
 		<tile id="0xE0">
 			<objectlayout>
-				<low>
-					<options mask="11111111" shift="0" display="Koopa Troopa 'Prize' (Unused):">
-						<option display="Mushroom" value="0" />
-						<option display="Star" value="1" />
-						<option display="Flower" value="2" />
-						<option display="Cloud" value="3" />
-					</options>
-				</low>
+				<low />
 				<high>
 					<options mask="11111111" shift="0" display="Toad House Item:">
 						<option display="INVALID" value="0" />
@@ -1304,7 +1297,14 @@
 			<!-- Spade Panel overrides the purpose of both values -->
 			<!-- Low byte of Tile Layout actually selects which bonus room to use (SMB3 only ever used zero) -->
 			<tilelayout tileset="15">	<!-- Specify tileset because there's no way to infer what it should be! -->
-				<low />
+				<low>
+					<options mask="11111111" shift="0" display="Koopa Troopa 'Prize' (Unused):">
+						<option display="Mushroom" value="0" />
+						<option display="Star" value="1" />
+						<option display="Flower" value="2" />
+						<option display="Cloud" value="3" />
+					</options>
+				</low>
 				<high>
 					<options mask="11111111" shift="0" display="Bonus Intro Room:">
 						<option display="Bonus Intro: Typical" value="0" />
