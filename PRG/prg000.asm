@@ -6982,7 +6982,7 @@ Video_3CMFlowStem:
 	.byte $04, $A9, $FC, $FC, $A9
 	.byte $00	; Terminator
 
-Video_3CMFlowBot
+Video_3CMFlowBot:
 	vaddr $220B
 	.byte $01, $A9
 	vaddr $2214
