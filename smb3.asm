@@ -2419,7 +2419,7 @@ Tile_Mem:	.ds 6480	; $6000-$794F Space used to store the 16x16 "tiles" that make
 	; 3 = Leaf
 	; 4 = Frog
 	; 5 = Tanooki
-	; 6 = Hammer
+	; 6 = Hammer Suit
 	; 7 = Judgem's cloud
 	; 8 = P-Wing
 	; 9 = Star
@@ -2717,7 +2717,7 @@ CFIRE_LASER		= $15	; Laser fire
 	; 3 = Leaf
 	; 4 = Frog
 	; 5 = Tanooki
-	; 6 = Hammer
+	; 6 = Hammer Suit
 	; 7 = Judgem's cloud
 	; 8 = P-Wing
 	; 9 = Star
